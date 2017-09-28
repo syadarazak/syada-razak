@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="wrapper">
+<div id="header">
+</div>
+<div id="navigation">
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="about us.html">ABOUT US</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MAKEUP LOOKS
+<div class="dropdown-content">
+  <a href="contouring.html">CONTOURING</a>
+  <a href="natural makeup looks.html">NATURAL MAKEUP LOOKS
+ </a>
+</div>
+</li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">BEAUTY TIPS
+  <div class="dropdown-content">
+    <a href="makeup hacks.html">MAKEUP HACKS</a>
+    <a href="makeup for fair skin.html">MAKEUP FOR FAIR SKIN</a>
+    <a href="makeup for medium skin.html">MAKEUP FOR MEDIUM SKIN</a>
+    <a href="makeup for dark skin.html">MAKEUP FOR DARK SKIN</a>
+</div>
+</li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">SKINCARE
+  <div class="dropdown-content">
+    <a href="tips for dry skin.html">TIPS FOR DRY SKIN</a>
+    <a href="tips for oily skin.html">TIPS FOR OILY SKIN</a>
+</div>
+</li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MAKEUP TUTORIALS
+  <div class="dropdown-content">
+    <a href="lips makeup tutorials.html">LIPS MAKEUP TUTORIAL</a>
+    <a href="eyebrow tutorials.html">EYEBROW TUTORIALS</a>
+</div>
+</li>
+
+    
+    <li><a href="FAQ.html">FAQ</a></li>
+</ul>
+    
+</div>
+<div id="content">
+<div class="cities">
+  <h1 align="center">HOME</h1>
+</div>
+<p align="left">
+  </head>
+  <body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">
+    <div align="center">
+      <p><img src="images/dubai.jpg" width="850" height="550" /></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div align="center"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">
+    <div align="center">
+      <p><img src="images/img_1418163927_394.jpg" width="850" height="550" /></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">
+    <div align="center">
+      <p><img src="images/Maquillaje-profesional-para-eventos.jpg" width="850" height="550" /></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">
+    <div align="center"><img src="images/Professional-Model-Makeup-Wallpaper.jpg" width="850" height="550" /></div>
+  </div>
+  <div align="center"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <div align="center"></div>
+</div>
+
+</div>
+<div align="center"><br>
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script></div>
+<div class="clr"></div>
+<div id="footer"><h4 align="center"><strong>Copyright bestofmakeup &copy;2017.MyFirst website dot com.</strong></h4>
+<p>&nbsp;</p>
+</body>
+</html>
+
